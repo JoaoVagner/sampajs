@@ -115,7 +115,23 @@
         display: inline-block;
         border-image: initial;
       }
-
+#org {
+  margin-top: 40px;
+}
+#organizadores_lista {
+}
+#organizadores_lista li {
+  text-align: left;
+}
+#organizadores_lista li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  text-align: left;
+}
+#organizadores_lista li a:hover {
+  color: #666;
+}
     </style>
   </head>
 
@@ -129,6 +145,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="#sponsor">Patrocinadores</a></li>
           <li><a href="#local">Local</a></li>
+          <li><a href="#orh">Organizadores</a></li>
        </ul>
       </nav>
     </header>
@@ -163,9 +180,9 @@
       <a href="http://www.gonow.com.br"><img src="_img/sponsor/gonow.png" class="sponsor" alt="Gonow Tecnologia"></a>
       <a href="http://nodegrid.com"><img src="_img/sponsor/nodegrid.png" alt="Nodegrid Cloud Source"></a>
       
-      <h1>Organizadores</h1>
-      <ul>
-        <li><a href="http://nosqlbr.com.br/" target="_blank">Jean Carlo nascimento aka Suissa</a></li>
+      <h1 class="show" id="org">Organizadores</h1>
+      <ul id="organizadores_lista">
+        <li><a href="http://nosqlbr.com.br/" target="_blank">Jean Carlo Nascimento aka Suissa</a></li>
         <li><a href="http://avelino.us/" target="_blank">Thiago Avelino</a></li>
       </ul>
     </aside>
