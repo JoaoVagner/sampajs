@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Evento de Javascript - sampa.js</title>
+    <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css' />
+    <style>
+      header,footer,nav,aside,section { display: block; }
+      body {
+        text-align: center;
+        background: #c7ced1 url("_img/noise.png") repeat;
+        text-shadow: 0 1px 0 rgba(255,255,255,0.60);
+        /*text-align: left;*/
+      }
+      h1, h2, h3, h4, h5, h6, li, aside {
+        font-family: "Geo", sans-serif;
+      }
+      body, input, textarea, code, pre {
+        font-family: "Geo",sans-serif;
+        font-size: 18px;
+      }
+
+
+      header h1 { font-size: 90px; word-spacing: -.5ex; }
+      header h1 a { color: #000 !important; }
+      header h1 a { text-decoration: none }
+      header h1 .js {
+        padding: 9px 13px 5px 23px;
+        color: #fff;
+        background: #333;
+        background-color: rgba(0,0,0,0.80);
+        border: solid 1px rgba(0,0,0,0.20);
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.50);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px
+      }
+      header nav{
+        margin: 1em 0;
+        border-bottom: dotted 2px #ccc;
+        border-bottom: dotted 2px rgba(0,0,0,0.20);
+        width: 600px;
+        margin-left: -10px;
+      }
+      header nav ul { margin:5px 0; }
+      header nav li{ display:inline;margin:0 1ex; }
+
+      aside {
+        display: block;
+        float: left;
+        width: 260px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      aside .sponsor {
+        width: 213px;
+        height: 69px;
+      }
+
+      body #content {
+        float: left;
+        text-align: left;
+        background-color: #FAFAFA;
+        background-color: rgba(255, 255, 255, 0.90);
+        border: solid 1px rgba(0, 0, 0, 0.10);
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.10);
+        -moz-box-shadow: 0 0 5px rgba(0,0,0,0.10);
+        box-shadow: 0 0 5px rgba(0,0,0,0.10);
+        z-index: 10000;
+        position: relative;
+        padding: 10px 20px;
+        width: 580px;
+        -webkit-transition: color 100ms linear;
+        -moz-transition: color 100ms linear;
+        transition: color 100ms linear;
+        border-image: initial;
+        margin: 0 0 0 150px;
+      }
+
+
+      body footer ul { margin:5px 0; }
+      body footer li{ display:inline;margin:0 1ex; }
+      body footer {
+        display: inline;
+        clear: left;
+        border-top: dotted 2px #CCC;
+        border-top: dotted 2px rgba(0, 0, 0, 0.20);
+        font-size: 14px;
+        width: 600px;
+        margin-left: -10px;
+        margin-top: 2em;
+        color: rgba(0, 0, 0, 0.30);
+        text-align: center;
+      }
+
+      h1.show {
+        text-align: left !important;
+        padding: 9px 13px 5px 23px;
+        color: white;
+        background: #333;
+        background-color: rgba(0, 0, 0, 0.80);
+        border: solid 1px rgba(0, 0, 0, 0.20);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.50);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        margin: 0 0 0 -23px;
+        padding-left: 23px;
+        display: inline-block;
+        border-image: initial;
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="content">
+    <header>
+      <h1><a href="/">sampa<span class="js">.js</span></a></h1></h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#sponsor">Patrocinadores</a></li>
+          <li><a href="#local">Local</a></li>
+       </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h1>Formulario de inscrição e grade de palestra!</h1>
+    </section>
+
+    <section>
+      <h1 class="show" id="local">Local</h1><br />
+      Rua Tenerife, 31 - 13a, São Paulo<br />
+      <iframe width="450" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com.br/maps?f=q&amp;source=s_q&amp;hl=pt-BR&amp;geocode=+&amp;q=Rua+Tenerife,+31+-+13a,+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Tenerife,+31+-+Itaim+Bibi,+S%C3%A3o+Paulo,+04548-040&amp;ll=-23.5963,-46.687886&amp;spn=0.010087,0.019226&amp;t=m&amp;z=14&amp;vpsrc=0&amp;iwloc=r3&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com.br/maps?f=q&amp;source=embed&amp;hl=pt-BR&amp;geocode=+&amp;q=Rua+Tenerife,+31+-+13a,+S%C3%A3o+Paulo&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Tenerife,+31+-+Itaim+Bibi,+S%C3%A3o+Paulo,+04548-040&amp;ll=-23.5963,-46.687886&amp;spn=0.010087,0.019226&amp;t=m&amp;z=14&amp;vpsrc=0&amp;iwloc=r3" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small><br />
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="http://twitter.com/sampajs">@sampajs</a></li>
+        <li>run by <a href="http://nodegrid.com">Nodegrid Cloud Source</a></li>
+      </ul>
+    </footer>
+    </div>
+
+    <aside>
+      <h1 class="show" id="data">Data</h1>
+      <h1>Data: 19/10/2011</h1><br />
+
+
+
+      <h1 class="show" id="sponsor">Patrocinadores</h1>
+      <a href="http://www.gonow.com.br"><img src="_img/sponsor/gonow.png" class="sponsor" alt="Gonow Tecnologia"></a>
+      <a href="http://nodegrid.com"><img src="_img/sponsor/nodegrid.png" alt="Nodegrid Cloud Source"></a>
+    </aside>
+
+  </body>
+
+</html>
