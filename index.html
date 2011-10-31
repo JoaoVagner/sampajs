@@ -120,6 +120,17 @@
         display: inline-block;
         border-image: initial;
       }
+
+      .top{
+         color: white;
+        background: #333;
+        background-color: rgba(0, 0, 0, 0.80);
+        border: solid 1px rgba(0, 0, 0, 0.20);
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.50);
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.50);
+      }
 #org {
   margin-top: 40px;
 }
@@ -148,21 +159,53 @@
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
+          <li><a href="#talk">Palestras</a></li>
+          <li><a href="#inscricao">Inscrição</a></li>
           <li><a href="#sponsor">Patrocinadores</a></li>
           <li><a href="#local">Local</a></li>
-          <li><a href="#organizadores">Organizadores</a></li>
        </ul>
       </nav>
     </header>
 
     <section>
-      <h1>Formulario de inscrição e grade de palestra!</h1>
+      <h1 class="show" id="inscricao">Inscrição</h1>
+      <p>Para fazer a sua inscrição <a href="https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dEpvR19zMVRTU3cwaXdMb3U1N09oT3c6MQ#gid=0" target="_black">clique aqui</a>.
     </section>
+
     <section>
       <h1 class="show" id="talk">Palestras</h1><br />
       <p>
       Envie sua proposta de palestra: <a href="http://call4paperz.com/events/sampajs">http://call4paperz.com/events/sampajs</a>
       </p>
+      <table width="580" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td width="100" class="top">HORARIO</td>
+            <td class="top">PALESTRANTE</td>
+            <td class="top">TEMA</td>
+          </tr> 
+          <tr>
+            <td><span class="time">09:00 - 09:30</span></td>
+            <td colspan="2"><p>Abertura</p></td>
+          </tr>
+          <tr>
+            <td><span class="time">09:30 - 10:15</span></td>
+            <td><p>Daniel Filho</p></td>
+            <td><p>A Web Desconectada</p></td>
+          </tr>
+          <tr>
+            <td><span class="time">10:20 - 10:55</span></td>
+            <td><p>Jean C. Nascimento aka Suissa</p></td>
+            <td><p>Storage</p></td>
+          </tr>
+          <tr>
+            <td><span class="time">11:05 - 10:40</span></td>
+            <td><p>Thiago Avelino</p></td>
+            <td><p>Implementando teste unitario com Javascript e Selenium</p></td>
+          </tr>
+        </tbody>
+      </table>
+
     </section>
 
     <section>
